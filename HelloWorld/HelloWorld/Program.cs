@@ -8,6 +8,13 @@ namespace HelloWorld
         {
             Console.WriteLine("Hello World!");
             Console.ReadLine();
+            DoJob();
+        }
+
+        static void DoJob()
+        {
+            var elTrabajo = new Trabajo();
+            elTrabajo.Realicelo();
         }
     }
 }

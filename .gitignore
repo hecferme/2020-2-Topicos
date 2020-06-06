@@ -3,3 +3,11 @@
 ################################################################################
 
 /.vs/2020-2-Topicos/v16
+/HelloWorld/HelloWorld/bin/Debug/netcoreapp3.1
+/HelloWorld/HelloWorld/obj
+/HelloWorld/HelloWorld.Veintiuno.Modelo/bin/Debug/netcoreapp3.1
+/HelloWorld/HelloWorld.Veintiuno.Modelo/obj
+/HelloWorld/HelloWorld.Veintiuno.Naipe/bin/Debug/netcoreapp3.1
+/HelloWorld/HelloWorld.Veintiuno.Naipe/obj
+/HelloWorld/.vs/HelloWorld
+/.vs
