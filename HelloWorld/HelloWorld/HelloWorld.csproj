@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
@@ -6,6 +6,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\EFCoreNorthWind.DataAccess\EFCoreNorthWind.DataAccess.csproj" />
+    <ProjectReference Include="..\EFCoreNorthWind.Model\EFCoreNorthWind.Model.csproj" />
     <ProjectReference Include="..\HelloWorld.Veintiuno.Naipe\HelloWorld.Veintiuno.Naipe.csproj" />
   </ItemGroup>
 

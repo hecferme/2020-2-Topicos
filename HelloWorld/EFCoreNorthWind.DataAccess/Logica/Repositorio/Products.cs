@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace EFCoreNorthWind.DataAccess
+namespace EFCoreNorthWind.DataAccess.Repositorio
 {
-    internal class ProductsRepo
+    internal class Products
     {
         static Model.Models.NorthWindContext _miContexto = new Model.Models.NorthWindContext();
         public Model.Models.Products GetProductById (int elProductId)
@@ -21,5 +21,13 @@ namespace EFCoreNorthWind.DataAccess
             var elResultado = laConsulta.ToList();
             return elResultado;
         }
+        public IList<Model.Models.Products> GetProductsByPriceRange(decimal? elLimiteInferior, decimal? elLimiteSuperior)
+        {
+            var laConsulta = _miContexto.Products.Where
+                        (p => elLimiteInferior <= p.UnitPrice && p.UnitPrice <= elLimiteSuperior);
+            var elResultado = laConsulta.ToList();
+            return elResultado;
+        }
+
     }
 }

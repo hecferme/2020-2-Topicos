@@ -14,7 +14,7 @@ namespace HelloWorld
         static void DoJob()
         {
             var elTrabajo = new Trabajo();
-            elTrabajo.Realicelo();
+            elTrabajo.RealiceConsultasNorthWind();
         }
     }
 }
