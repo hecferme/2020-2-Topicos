@@ -5,7 +5,7 @@ namespace EFCoreNorthWind.Model.Models
     public partial class Suppliers
     {
         public string CompanyNameUppercase { get {
-                return CompanyName;
+                return CompanyName.ToUpper();
             } set { } }
     }
 }
