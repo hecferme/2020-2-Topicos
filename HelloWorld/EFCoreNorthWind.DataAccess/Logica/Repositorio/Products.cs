@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -15,9 +16,7 @@ namespace EFCoreNorthWind.DataAccess.Repositorio
         public IList<Model.Models.Products> GetProductsByName(string elProductName)
         {    
             var laConsulta = _miContexto.Products.Where
-                        (p => p.ProductName.Contains(elProductName));
-            laConsulta = _miContexto.Products.OrderBy(p => p.ReorderLevel);
-            laConsulta = _miContexto.Products.OrderByDescending(p => p.ProductName);
+                        (p => p.ProductName.Contains(elProductName)).Include(p => p.Category).OrderBy(p => p.ReorderLevel).OrderByDescending(p => p.ProductName);
             var elResultado = laConsulta.ToList();
             return elResultado;
         }

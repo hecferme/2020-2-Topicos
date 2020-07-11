@@ -20,5 +20,14 @@ namespace EFCoreNorthWind.Model.Models
                 return elResultado;
             } 
             set { } }
+        [NotMapped]
+        public string CategoryName { 
+            get {
+                var elResultado = string.Empty;
+                if (this.Category != null)
+                    elResultado = this.Category.CategoryName;
+                return elResultado;
+            } 
+            set { } }
     }
 }
