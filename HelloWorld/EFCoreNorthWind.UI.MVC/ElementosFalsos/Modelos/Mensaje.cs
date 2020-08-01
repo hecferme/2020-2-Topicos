@@ -13,7 +13,7 @@ namespace EFCoreNorthWind.UI.MVC.ModelosFalsos
     {
         [Required]
         [Range(0, 100)]
-        [ValidarNumeroPar(ErrorMessage ="El número debe ser par.")]
+        [ValidarNumeroPar(true, ErrorMessage ="El número debe ser par.")]
         public int Id { get; set; }
         [Required]
         [EmailAddress]
