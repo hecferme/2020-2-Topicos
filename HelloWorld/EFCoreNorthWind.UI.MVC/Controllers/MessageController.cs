@@ -41,14 +41,19 @@ namespace EFCoreNorthWind.UI.MVC.Controllers
         [ValidateAntiForgeryToken]
         public ActionResult Create(Mensaje losDatos)
         {
-            try
-            {
-                GrabarMensaje(losDatos);
-                return RedirectToAction(nameof(Index));
-            }
-            catch
-            {
+            if (!ModelState.IsValid)
                 return View();
+            else
+            {
+                try
+                {
+                    GrabarMensaje(losDatos);
+                    return RedirectToAction(nameof(Index));
+                }
+                catch
+                {
+                    return View();
+                }
             }
         }
 

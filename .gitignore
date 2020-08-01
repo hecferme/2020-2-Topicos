@@ -11,3 +11,8 @@
 /HelloWorld/HelloWorld.Veintiuno.Naipe/obj
 /HelloWorld/.vs/HelloWorld
 /.vs
+/HelloWorld/EFCoreNorthWind.DataAccess/obj
+/HelloWorld/EFCoreNorthWind.Model/obj
+/HelloWorld/EFCoreNorthWind.UI.MVC/bin/Debug/netcoreapp3.1
+/HelloWorld/EFCoreNorthWind.UI.MVC/obj
+/HelloWorld/EFCoreNorthWind.UI.MVC/wwwroot
