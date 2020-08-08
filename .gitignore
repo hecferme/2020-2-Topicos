@@ -16,3 +16,5 @@
 /HelloWorld/EFCoreNorthWind.UI.MVC/bin/Debug/netcoreapp3.1
 /HelloWorld/EFCoreNorthWind.UI.MVC/obj
 /HelloWorld/EFCoreNorthWind.UI.MVC/wwwroot
+/HelloWorld/EFCoreNorthWind.DataAccess/bin/Debug/netcoreapp3.1
+/HelloWorld/EFCoreNorthWind.Model/bin/Debug/netcoreapp3.1

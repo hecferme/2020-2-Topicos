@@ -10,6 +10,12 @@ namespace EFCoreNorthWind.DataAccess.Repositorio
     {
         static Model.Models.NorthWindContext _miContexto = new Model.Models.NorthWindContext();
 
+        public IList<Model.Models.Suppliers> ListAll ()
+        {
+            var laLista = _miContexto.Suppliers.ToList();
+            return laLista;
+        }
+
         public IList<Model.Models.Suppliers> GetSuppliersByName(string elSupplierName)
         {
             var laLista = _miContexto.Suppliers.Where(s => s.CompanyName.Contains(elSupplierName)).ToList();
